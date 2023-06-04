@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-       <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +16,7 @@
     		<p>ảnh được tải lên<p>
     	</div>
         <div class="form_add">
-        	<form action="./themSanPham" method="post" enctype="multipart/form-data" >
+        <form action="./themSanPham" method="post" enctype="multipart/form-data" >
             <label for="ten-san-pham">Tên sản phẩm:</label>
             <input type="text" id="ten-san-pham" name="ten-san-pham" required>
             <label for="don-gia">Đơn giá:</label>

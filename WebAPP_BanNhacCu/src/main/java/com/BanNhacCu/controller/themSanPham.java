@@ -20,7 +20,7 @@ public class themSanPham extends HttpServlet{
 			req.setCharacterEncoding("UTF-8");
 			ServletContext context = req.getServletContext();
 			String realpath = context.getRealPath("/img/images");
-			MultipartRequest multi = new MultipartRequest(req, realpath);
+			MultipartRequest multi = new MultipartRequest(req, realpath, "UTF-8");
 			String tensp = multi.getParameter("ten-san-pham");
 			double dongia = Double.parseDouble(multi.getParameter("don-gia"));
 			int soluong = Integer.parseInt(multi.getParameter("so-luong"));

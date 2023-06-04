@@ -49,7 +49,6 @@ public class HomeController extends HttpServlet{
 		if(listSP == null) {
 			listSP = SanPhamDAO.getInstance().selectByPageID(index);
 		}
-		System.out.println(index);
 		req.setAttribute("listSP", listSP);
 		ArrayList<DanhMucModel> listDM = DanhMucDAO.getInstance().selectAll();
 		req.setAttribute("listDM", listDM);
